@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar">
+        <div class="logo"><a href="index.html">ShopEase</a></div>
+        <div class="cart-icon">
+            <a href="cart.html">🛒<span id="cart-count">0</span></a>
+
+        </div>
+    </nav>
+
+
+    <div id="cart-page">
+        <h1>Your Shopping Cart 🛒</h1>
+        <ul id="cart-items-list"></ul>
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="checkout">Checkout</button>
+    </div>
+
+    <section class="cart-bottom-section">
+        <h2>Continue Shopping or Check Out Our Latest Offers! 🎉</h2>
+        <p>Looking for more? Check out our latest arrivals and best deals.</p>
+        <a href="index.html" class="btn-shop">🔙 Continue Shopping</a>
+    </section>
+    
+    <script src="cart.js" defer></script>
+</body>
+</html>

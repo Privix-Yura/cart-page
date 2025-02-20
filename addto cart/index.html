@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="data.js"></script> <!-- Product Data -->
+    <script defer src="app.js"></script> <!-- Main App Logic -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">ShopEase</a></div>
+        <div class="cart-icon">
+            <a href="cart.html">🛒<span id="cart-count">0</span></a>
+
+        </div>
+    </nav>
+
+    <!-- Product List -->
+    <section id="products-container"></section>
+
+    <!-- Cart Section -->
+    <div id="cart-modal" class="hidden">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 ShopEase. All rights reserved.</p>
+            <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
